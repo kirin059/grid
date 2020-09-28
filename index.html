@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>webtoon</title>
+  <style>
+  *{
+    margin:0;
+  }
+  h1{
+  font-size: 60px;
+  border-bottom: solid grey 1px;
+  padding:30px;
+  text-align: center;
+  }
+  a:link{
+    color:black;
+  }
+  a:visited{
+    color:purple;
+  }
+  a:hover{
+    color:blue;
+  }
+  img{
+    float:bottom;
+  }
+  #grid{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+  }
+  #grid ol{
+  text-align: left;
+  font-size: 20px;
+  border-right: solid grey 1px;
+  padding:40px;
+  display: inline-block;
+  }
+  #article{
+    padding:15px;
+  }
+  </style>
+</head>
+
+<body>
+    <h1><a href="index.html">Grid section</a></h1>
+<div id="grid">
+    <ol>
+      <a href="1.html"><li>About grid punction</li></a>
+      <a href="https://blog.naver.com/boma91" target="_blank"><li>Personal blog</li></a>
+      <a href="practice.html"><li>practice</li></a>
+    </ol>
+  <div id="article">
+    <p>
+    <h2 style="font-size:40px; color:#585858;">grid definition</h2>
+    <br><br>
+
+    <mark style="background-color:#E6E6E6"><b>사전적 정의</mark>: 그리드는 수평선과 수직선이 교차해서 이루어진 집합체 - 하나의 집합체는 세로 열을 그리고 다른 하나는
+      가로 행을 정의한다. 각 요소는 이러한 열과 행으로 된 라인을 따라 생성된 그리드에 배치할 수 있다. </b>
+    <br><br>
+    grid의 행과 열은 <em>grid-template-columns</em> 및 <em>grid-template-rows</em> 속성으로 정의한다. 이렇게 하면 grid track도 함께 정의된다.
+    grid track은 grid에 그려진 두 라인 사이의 공간을 나타낸다. 아래 그림에서는 grid의 첫 번째 가로 행에 놓여있는 track이 돋보이게 표시된 것을 확인할 수 있다.<br>
+    <img src="grid.jpg">
+  </div>
+</div>
+</body>
+</html>

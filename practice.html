@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>webtoon</title>
+  <style>
+  *{
+    margin:0;
+  }
+  h1{
+  font-size: 60px;
+  border-bottom: solid grey 1px;
+  padding:30px;
+  text-align: center;
+  }
+  a:link{
+    color:black;
+  }
+  a:visited{
+    color:purple;
+  }
+  a:hover{
+    color:blue;
+  }
+  img{
+    float:bottom;
+  }
+  #grid{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+  }
+  #grid ol{
+  text-align: left;
+  font-size: 20px;
+  border-right: solid grey 1px;
+  padding:40px;
+  display: inline-block;
+  }
+  .article{
+    padding:15px;
+  }
+  .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 100px;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  margin:20px;
+  padding:20px;
+  }
+  .box1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  border: 5px solid purple;
+}
+
+.box2 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 5;
+  border: 5px solid purple;
+}
+.box3 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  border: 5px solid purple;
+}
+.box4 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  border: 5px solid purple;
+}
+.box5 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  border: 5px solid purple;
+}
+  </style>
+</head>
+
+<body>
+    <h1><a href="index.html">Grid section</a></h1>
+<div id="grid">
+    <ol>
+      <a href="1.html"><li>About grid punction</li></a>
+      <a href="https://blog.naver.com/boma91" target="_blank"><li>Personal blog</li></a>
+      <a href="practice.html"><li>practice</li></a>
+    </ol>
+  <div class="article">
+    <p>
+    <h2 style="font-size:40px; color:#585858;">grid practice</h2>
+
+  <div class="container">
+    <div class="box1">One</div>
+    <div class="box2">Two</div>
+    <div class="box3">Three</div>
+    <div class="box4">Four</div>
+    <div class="box5">Five</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
